@@ -3,7 +3,9 @@ import Image from 'next/image';
 import Danflix from '../public/assets/Danflix.jpg';
 import Dashboard from '../public/assets/dashboard.jpeg';
 import Bahamas from '../public/assets/Bahamas.png';
+import Food from '../public/assets/Food.jpeg';
 import Link from 'next/link';
+import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
@@ -15,19 +17,14 @@ const Projects = () => {
         <h2 className='py-4'>What I've Built</h2>
 
         {/*container for project*/}
+        
         <div className='grid md:grid-cols-2 gap-8'>
 
-            {/*project component i did a little destructuring*/}
-            <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
-                <Image className='rounded-xl group-hover:opacity-10' src={Danflix} alt='/' />
-                <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                    <h3 className='text-2xl tracking-wider text-white text-center'>Danflix</h3>
-                    <p className='pb-4 pt-2 text-white text-center'>React JS</p>
-                    <Link href='https://emmyflix-59b75.web.app'>
-                        <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>More Info</p>
-                    </Link>
-                </div>
-            </div>
+          {/*project component i did a little destructuring*/}
+          <ProjectItem title='Danflix' backgroundImg={Danflix} projectUrl='https://emmyflix-59b75.web.app' />
+          <ProjectItem title='Food' backgroundImg={Food} projectUrl='https://afam-confectionery.netlify.app' />
+          <ProjectItem title='Bahamas' backgroundImg={Bahamas} projectUrl='https://veegan.netlify.app' />
+          <ProjectItem title='Dashboard' backgroundImg={Dashboard} projectUrl='https://emmy-dan.netlify.app' />
         </div>
       </div>
     </div>
