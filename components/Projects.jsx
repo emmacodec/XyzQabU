@@ -9,7 +9,7 @@ import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
-    <div className='w-full'>
+    <div id='projects' className='w-full'>
       
       {/*container*/}
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
@@ -21,10 +21,10 @@ const Projects = () => {
         <div className='grid md:grid-cols-2 gap-8'>
 
           {/*project component i did a little destructuring*/}
-          <ProjectItem title='Danflix' backgroundImg={Danflix} projectUrl='https://emmyflix-59b75.web.app' />
-          <ProjectItem title='Food' backgroundImg={Food} projectUrl='https://afam-confectionery.netlify.app' />
-          <ProjectItem title='Bahamas' backgroundImg={Bahamas} projectUrl='https://veegan.netlify.app' />
-          <ProjectItem title='Dashboard' backgroundImg={Dashboard} projectUrl='https://emmy-dan.netlify.app' />
+          <ProjectItem title='Danflix' backgroundImg={Danflix} projectUrl='/Danflix' />
+          <ProjectItem title='Food' backgroundImg={Food} projectUrl='/Food' />
+          <ProjectItem title='Bahamas' backgroundImg={Bahamas} projectUrl='/Veegan' />
+          <ProjectItem title='Dashboard' backgroundImg={Dashboard} projectUrl='/Dasboard' />
         </div>
       </div>
     </div>

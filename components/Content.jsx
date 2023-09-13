@@ -7,7 +7,7 @@ import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 
 const Content = () => {
   return (
-    <div className="w-full lg:h-screen">
+    <div id="content" className="w-full lg:h-screen">
       {/*container*/}
       <div className="max-w-[]1240px] m-auto px-2 py-16 w-full">
         <p className="font-bold uppercase text-[#5651e5] text-xl tracking-widest">
