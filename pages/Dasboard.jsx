@@ -13,7 +13,7 @@ const Dashboard = () => {
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'></div>
         <Image className='absolute z-1' layout='fill' objectFit='cover' src={Dash} alt='/' />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>User Dashboard</h2>
+          <h2 className='py-2'>User Dashboard UI</h2>
           <h3>Next JS, Tailwind, JavaScript</h3>
         </div>
       </div>
@@ -27,10 +27,10 @@ const Dashboard = () => {
             holiday resort for friends, family and loved ones. I use the React useState hook to toggle my mobile
             responsive navbar state and build a custom image component.
           </p>
-          <a href='https://veegan.netlify.app'>
+          <a href='https://emmy-dan.netlify.app'>
           <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
           </a>
-          <a href='http://github.com/emmacodec/travel-app/'>
+          <a href='http://github.com/emmacodec/dashboard-app/'>
           <button className='px-8 py-2 mt-4'>Code</button>
           </a>
         </div>

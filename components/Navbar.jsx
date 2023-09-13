@@ -5,11 +5,15 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import {BsFillPersonLinesFill} from 'react-icons/bs';
+import {useRouter} from 'next/router';
 
 const Navbar = () => {
 
 const [nav, setNav] = useState(false);
 const [shadow, setShadow] = useState(false);
+const [navBackground, setNavBackground] = useState('#ecf0f3');
+const [linkColor, setLinkColor] = useState('#1f2937');
+const router = useRouter();
 
 {/*function that handles/toggle the menu using state*/}
 const handleNav = () => {
@@ -27,14 +31,29 @@ useEffect(()=>{
   window.addEventListener('scroll', handleShadow);
 },[])
 
+useEffect(()=>{
+  if(
+    router.asPath === '/Danflix' ||
+    router.asPath === '/Food' ||
+    router.asPath === '/Veegan' ||
+    router.asPath === '/Dasboard' 
+  ) {
+    setNavBackground('transparent')
+    setLinkColor('#ecf0f3')
+  } else {
+    setNavBackground('#ecf0f3')
+    setLinkColor('#1f2937')
+  }
+}, [router])
+
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+    <div style={{backgroundColor: `${navBackground}`}} className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href='/'>
         <Image src={Logo} alt="/" width={80} height={20} />
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{color: `${linkColor}`}} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>

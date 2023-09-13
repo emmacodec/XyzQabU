@@ -77,28 +77,28 @@ const Content = () => {
             <div className="p-4">
 
               {/*form-container*/}
-              <form>
+              <form method="POST" action="https://getform.io/f/e2a9bd99-3555-4d33-a1bf-91b4c7ee0649">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="text-sm uppercase py-2">Name</label>
-                    <input className="rounded-lg border-2 p-3 flex border-gray-300" type="text" />
+                    <input className="rounded-lg border-2 p-3 flex border-gray-300" type="text" name="name" />
                   </div>
                   <div className="flex flex-col">
                     <label className="text-sm uppercase py-2">Phone Number</label>
-                    <input className="rounded-lg border-2 p-3 flex border-gray-300" type="number" />
+                    <input className="rounded-lg border-2 p-3 flex border-gray-300" type="text" name="text" />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="text-sm uppercase py-2">E-mail</label>
-                  <input className="rounded-lg border-2 p-3 flex border-gray-300" type="email" />
+                  <input className="rounded-lg border-2 p-3 flex border-gray-300" type="email" name="email" />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="text-sm uppercase py-2">Subject</label>
-                  <input className="rounded-lg border-2 p-3 flex border-gray-300" type="text" />
+                  <input className="rounded-lg border-2 p-3 flex border-gray-300" type="text" name="text" />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="text-sm uppercase py-2">Message</label>
-                  <textarea className="border-2 rounded-lg p-3 border-gray-300" rows={10}></textarea>
+                  <textarea className="border-2 rounded-lg p-3 border-gray-300" rows={10} name="text"></textarea>
                 </div>
                 <button className="w-full p-3 text-gray-200 mt-4">Submit Message</button>
               </form>
