@@ -5,6 +5,7 @@ import Dashboard from '../public/assets/dashboard.jpeg';
 import Bahamas from '../public/assets/Bahamas.png';
 import Food from '../public/assets/Food.jpeg';
 import Todo from '../public/assets/todo.jpeg';
+import Pinge from '../public/assets/pinge.jpeg';
 import Link from 'next/link';
 import ProjectItem from './ProjectItem';
 
@@ -23,6 +24,7 @@ const Projects = () => {
 
           {/*project component i did a little destructuring*/}
           <ProjectItem title='Todo' backgroundImg={Todo} projectUrl='/Todo' />
+          <ProjectItem title='Chat' backgroundImg={Pinge} projectUrl='/Chat' />
           <ProjectItem title='Danflix' backgroundImg={Danflix} projectUrl='/Danflix' />
           <ProjectItem title='Food' backgroundImg={Food} projectUrl='/Food' />
           <ProjectItem title='Bahamas' backgroundImg={Bahamas} projectUrl='/Veegan' />
