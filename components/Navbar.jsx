@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Image from "next/image";
-import Logo from "../public/assets/logo.png";
+import ED from "../public/assets/ed.png";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
@@ -50,7 +50,7 @@ useEffect(()=>{
     <div style={{backgroundColor: `${navBackground}`}} className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href='/'>
-        <Image src={Logo} alt="/" width={80} height={20} />
+        <Image src={ED} alt="/" width={90} height={70} />
         </Link>
         <div>
           <ul style={{color: `${linkColor}`}} className="hidden md:flex">
@@ -90,7 +90,7 @@ useEffect(()=>{
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href='/'>
-              <Image src={Logo} alt="/" width={70} height={20} />
+              <Image src={ED} alt="/" width={80} height={60} />
               </Link>
 
               <div onClick={handleNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">

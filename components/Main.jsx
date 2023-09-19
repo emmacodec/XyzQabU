@@ -22,6 +22,8 @@ const Main = () => {
             learning some good backend stuff.
           </p>
 
+         
+
           {/*container surrounding icons*/}
           <div className="flex items-center justify-between max-w-[330px] mx-auto py-4">
             <a href="https://www.linkedin.com/in/daniel-emmanuel-924564236">
