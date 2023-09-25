@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import Danflix from '../public/assets/Danflix.jpg';
 import Dashboard from '../public/assets/dashboard.jpeg';
-import Bahamas from '../public/assets/Bahamas.png';
+import Bahamas from '../public/assets/brain.jpeg';
 import Food from '../public/assets/Food.jpeg';
 import Todo from '../public/assets/todo.jpeg';
 import Pinge from '../public/assets/pinge.jpeg';
@@ -27,7 +27,7 @@ const Projects = () => {
           <ProjectItem title='Chat' backgroundImg={Pinge} projectUrl='/Chat' />
           <ProjectItem title='Danflix' backgroundImg={Danflix} projectUrl='/Danflix' />
           <ProjectItem title='Food' backgroundImg={Food} projectUrl='/Food' />
-          <ProjectItem title='Bahamas' backgroundImg={Bahamas} projectUrl='/Veegan' />
+          <ProjectItem title='Quiz App' backgroundImg={Bahamas} projectUrl='/Veegan' />
           <ProjectItem title='Dashboard' backgroundImg={Dashboard} projectUrl='/Dasboard' />
         </div>
       </div>
