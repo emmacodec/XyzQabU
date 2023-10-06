@@ -8,6 +8,7 @@ import Todo from '../public/assets/todo.jpeg';
 import Pinge from '../public/assets/pinge.jpeg';
 import Link from 'next/link';
 import ProjectItem from './ProjectItem';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
@@ -20,7 +21,15 @@ const Projects = () => {
 
         {/*container for project*/}
         
-        <div className='grid md:grid-cols-2 gap-8'>
+        <motion.div 
+        className='grid md:grid-cols-2 gap-8'
+        initial="hidden" 
+        whileInView='visible' 
+        viewport={{once:true, amount:0.5}} 
+        transition={{duration: 2}}
+        variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+        >
+        
 
           {/*project component i did a little destructuring*/}
           <ProjectItem title='Todo' backgroundImg={Todo} projectUrl='/Todo' />
@@ -29,7 +38,7 @@ const Projects = () => {
           <ProjectItem title='Food' backgroundImg={Food} projectUrl='/Food' />
           <ProjectItem title='Quiz App' backgroundImg={Bahamas} projectUrl='/Veegan' />
           <ProjectItem title='Dashboard' backgroundImg={Dashboard} projectUrl='/Dasboard' />
-        </div>
+        </motion.div>
       </div>
     </div>
   )

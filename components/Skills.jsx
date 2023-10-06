@@ -10,6 +10,7 @@ import MongoDB from '../public/assets/mongoDB.png';
 import react from '../public/assets/react.png';
 import Realestate from '../public/assets/realestate.png';
 import Tailwind from '../public/assets/tailwind.png'; 
+import { motion } from 'framer-motion';
 
 
 const Skills = () => {
@@ -22,7 +23,15 @@ const Skills = () => {
         <h2 className='py-4 font-bold'>What I Can Do</h2>
 
         {/*Grid-container*/}
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
+        <motion.div 
+        className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'
+        initial="hidden" 
+        whileInView='visible' 
+        viewport={{once:true, amount:0.5}} 
+        transition={{duration: 2}}
+        variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+        >
+        
 
             {/*image-container*/}
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
@@ -126,7 +135,7 @@ const Skills = () => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
       </div>
     </div>
   )

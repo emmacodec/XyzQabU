@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Bahamas from '../public/assets/brain.jpeg';
 import {RiRadioButtonFill} from 'react-icons/ri';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const Veegan = () => {
   return (
@@ -19,7 +20,15 @@ const Veegan = () => {
       </div>
 
       {/*container*/}
-      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
+      <motion.div 
+      className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'
+      initial="hidden" 
+      whileInView='visible' 
+      viewport={{once:true, amount:0.5}} 
+      transition={{duration: 2}}
+      variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+      >
+      
         <div className='col-span-4'>
           <p className='tracking-widest uppercase text-[#5651e5] text-xl'>Project</p>
           <h2>Overview</h2>
@@ -45,7 +54,7 @@ const Veegan = () => {
         <Link href='/#projects'>
           <p className='underline cursor-pointer'>Back</p>
         </Link>
-      </div>
+      </motion.div>
     </div>
   )
 };

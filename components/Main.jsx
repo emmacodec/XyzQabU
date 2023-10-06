@@ -2,12 +2,19 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Main = () => {
   return (
     <div id="main" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div>
+        <motion.div  
+        initial="hidden" 
+          whileInView='visible' 
+          viewport={{once:true, amount:0.5}} 
+          transition={{duration: 2}}
+          variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+          >
           <p className="uppercase bg-gray-600 text-sm tracking-widest">
             LET'S BUILD SOMETHING GREAT TOGETHER
           </p>
@@ -52,7 +59,7 @@ const Main = () => {
               </div>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

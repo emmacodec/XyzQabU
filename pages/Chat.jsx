@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Pinge from '../public/assets/pinge.jpeg';
 import {RiRadioButtonFill} from 'react-icons/ri';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const Chat = () => {
   return (
@@ -20,7 +21,15 @@ const Chat = () => {
 
       {/*container*/}
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
-        <div className='col-span-4'>
+        <motion.div 
+        className='col-span-4'
+        initial="hidden" 
+        whileInView='visible' 
+        viewport={{once:true, amount:0.5}} 
+        transition={{duration: 2}}
+        variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+        >
+        
           <p className='tracking-widest uppercase text-[#5651e5] text-xl'>Project</p>
           <h2>Overview</h2>
           <p>To-do App is a web application that employs the use of CRUD (create, read, update, delete) functionality for 
@@ -35,7 +44,7 @@ const Chat = () => {
           <a href='http://github.com/emmacodec/azzubest'>
           <button className='px-8 py-2 mt-4'>Code</button>
           </a>
-        </div>
+        </motion.div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
