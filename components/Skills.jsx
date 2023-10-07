@@ -23,119 +23,172 @@ const Skills = () => {
         <h2 className='py-4 font-bold'>What I Can Do</h2>
 
         {/*Grid-container*/}
-        <motion.div 
-        className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'
-        initial="hidden" 
-        whileInView='visible' 
-        viewport={{once:true, amount:0.5}} 
-        transition={{duration: 2}}
-        variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
-        >
+        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
         
 
             {/*image-container*/}
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <motion.div 
+                initial="hidden" 
+                whileInView='visible' 
+                viewport={{once:true, amount:0.5}} 
+                transition={{duration: 2}}
+                variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}} 
+                className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
                         <Image src={Aws} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>Amazon Web Service</h3>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
                         <Image src={CSS} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>CSS</h3>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
                         <Image src={Firebase} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>FIREBASE</h3>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
                         <Image src={Github} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>GitHub</h3>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
                         <Image src={Hmtl} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>HTML</h3>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
                         <Image src={JavaScript} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>JAVASCRIPT</h3>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <motion.div 
+                initial="hidden" 
+                whileInView='visible' 
+                viewport={{once:true, amount:0.5}} 
+                transition={{duration: 2}}
+                variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
                         <Image src={MongoDB} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>MongoDB</h3>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
                         <Image src={react} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>REACT</h3>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
                         <Image src={Realestate} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>HOUSING ESTATE</h3>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
                         <Image src={Tailwind} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>TAILWIND</h3>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
-        </motion.div>
+        </div>
       </div>
     </div>
   )
