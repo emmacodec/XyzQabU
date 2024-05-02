@@ -21,12 +21,13 @@ const Main = () => {
           <h1 className="py-4 text-gray-700">
             Hi, I'm <span className="text-[#5651e5]">Emmanuel</span>
           </h1>
-          <h1 className="py-4 text-gray-700">A FRONT-END WEB DEVELOPER</h1>
+          <h1 className="py-4 text-gray-700">A FULL-STACK DEVELOPER</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I'm a proficient front end developer specializing in designing and
-            building exceptional digital experience (web applications). I'm
-            Focused on building responsive front-end web applications. Also
-            learning some good backend stuff.
+            I'm a proficient full-stack developer providing high-impact web and mobile app solutions for diverse industry and
+            organization. Skilled in developing and testing multiple web and mobile-based applications incorporating a range of
+            technologies. Passionate about learning and development with desire to apply skills to a larger development, eager
+            to tackle more complex problems, and continue to find efficient ways to maximize user efficiency. I am looking
+            for new challenges that allow me to continue growing professionally.
           </p>
 
          
