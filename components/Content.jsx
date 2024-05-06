@@ -29,7 +29,7 @@ const Content = () => {
               </div>
               <div>
                 <h2 className="py-2">Emmanuel Daniel</h2>
-                <p className="text-gray-500 font-bold">Full-stack Developer</p>
+                <p className="text-gray-500 font-bold">Full-stack web Developer</p>
                 <p className="py-4 text-gray-600">
                   I am available for full-time, freelance, internship positions.
                   Contact me...!
