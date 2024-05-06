@@ -8,7 +8,11 @@ import Hmtl from '../public/assets/html.png';
 import JavaScript from '../public/assets/javascript.png';
 import MongoDB from '../public/assets/mongoDB.png';
 import react from '../public/assets/react.png';
-import Realestate from '../public/assets/realestate.png';
+import Typescript from '../public/assets/TS.jpg';
+import php from '../public/assets/PHP.webp';
+import python from '../public/assets/Python.jpg';
+import sql from '../public/assets/SQL.jpg';
+import wordPress from '../public/assets/WordPress.jpg';
 import Tailwind from '../public/assets/tailwind.png'; 
 import { motion } from 'framer-motion';
 
@@ -164,10 +168,10 @@ const Skills = () => {
                  variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
                  className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src={Realestate} alt='/' width={64} height={64} />
+                        <Image src={Typescript} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>HOUSING ESTATE</h3>
+                        <h3>TYPESCRIPT</h3>
                     </div>
                 </motion.div>
             </div>
@@ -184,6 +188,74 @@ const Skills = () => {
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>TAILWIND</h3>
+                    </div>
+                </motion.div>
+            </div>
+
+            <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
+                    <div className='m-auto'>
+                        <Image src={php} alt='/' width={64} height={64} />
+                    </div>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h3>PHP</h3>
+                    </div>
+                </motion.div>
+            </div>
+
+            <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
+                    <div className='m-auto'>
+                        <Image src={python} alt='/' width={64} height={64} />
+                    </div>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h3>PYTHON</h3>
+                    </div>
+                </motion.div>
+            </div>
+
+            <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
+                    <div className='m-auto'>
+                        <Image src={sql} alt='/' width={64} height={64} />
+                    </div>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h3>SQL</h3>
+                    </div>
+                </motion.div>
+            </div>
+
+            <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <motion.div 
+                 initial="hidden" 
+                 whileInView='visible' 
+                 viewport={{once:true, amount:0.5}} 
+                 transition={{duration: 2}}
+                 variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
+                 className='grid grid-cols-2 gap-4 justify-center items-center'>
+                    <div className='m-auto'>
+                        <Image src={wordPress} alt='/' width={64} height={64} />
+                    </div>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h3>WORDPRESS</h3>
                     </div>
                 </motion.div>
             </div>
