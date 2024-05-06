@@ -11,7 +11,7 @@ const Navbar = () => {
 
 const [nav, setNav] = useState(false);
 const [shadow, setShadow] = useState(false);
-const [navBackground, setNavBackground] = useState('#ecf0f3');
+const [navBackground, setNavBackground] = useState('#f3e5f5');
 const [linkColor, setLinkColor] = useState('#1f2937');
 const router = useRouter();
 
