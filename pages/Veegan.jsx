@@ -14,8 +14,8 @@ const Veegan = () => {
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'></div>
         <Image className='absolute z-1' layout='fill' objectFit='cover' src={Bahamas} alt='/' />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Quiz App</h2>
-          <h3>Next JS, CSS, JavaScript</h3>
+          <h2 className='py-2 text-white'>Quiz App</h2>
+          <h3 className='text-white'>Next JS, CSS, JavaScript</h3>
         </div>
       </div>
 
@@ -30,9 +30,9 @@ const Veegan = () => {
       >
       
         <div className='col-span-4'>
-          <p className='tracking-widest uppercase text-[#5651e5] text-xl'>Project</p>
-          <h2>Overview</h2>
-          <p>Built a quiz app bootstrapped with create-next-app and taking some features such as 'use client' and updated routing. This app shows you the amount answers you got right and the amount of answers you got wrong. Also calculate your overall score,to number of questions answered as well.
+          <p className='tracking-widest uppercase text-[#ffb300] text-xl'>Project</p>
+          <h2 className='text-white'>Overview</h2>
+          <p className='text-white'>Built a quiz app bootstrapped with create-next-app and taking some features such as 'use client' and updated routing. This app shows you the amount answers you got right and the amount of answers you got wrong. Also calculate your overall score,to number of questions answered as well.
           </p>
           <a href='https://danz-quiz.netlify.app/'>
           <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
@@ -43,16 +43,16 @@ const Veegan = () => {
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
-            <p className='text-center font-bold pb-2'>Technologies</p>
+            <p className='text-center font-bold pb-2 text-[#ffb300]'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> Next</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> CSS</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> JavaScript</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> Next</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> CSS</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> JavaScript</p>
          </div>
           </div>
         </div>
         <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
+          <p className='underline cursor-pointer text-[#ffb300]'>Back</p>
         </Link>
       </motion.div>
     </div>

@@ -23,8 +23,8 @@ const Skills = () => {
       
       {/*container*/}
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5] font-bold'>Skills</p>
-        <h2 className='py-4 font-bold'>What I Can Do</h2>
+        <p className='text-xl tracking-widest uppercase text-[#ffb300] font-bold'>Skills</p>
+        <h2 className='py-4 font-bold text-white'>What I Can Do</h2>
 
         {/*Grid-container*/}
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
@@ -43,7 +43,7 @@ const Skills = () => {
                         <Image src={Aws} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>Amazon Web Service</h3>
+                        <h3 className='text-white'>Amazon Web Service</h3>
                     </div>
                 </motion.div>
             </div>
@@ -59,7 +59,7 @@ const Skills = () => {
                         <Image src={CSS} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>CSS</h3>
+                        <h3 className='text-white'>CSS</h3>
                     </div>
                 </motion.div>
             </div>
@@ -75,7 +75,7 @@ const Skills = () => {
                         <Image src={Firebase} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>FIREBASE</h3>
+                        <h3 className='text-white'>FIREBASE</h3>
                     </div>
                 </motion.div>
             </div>
@@ -91,7 +91,7 @@ const Skills = () => {
                         <Image src={Github} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>GitHub</h3>
+                        <h3 className='text-white'>GitHub</h3>
                     </div>
                 </motion.div>
             </div>
@@ -107,7 +107,7 @@ const Skills = () => {
                         <Image src={Hmtl} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>HTML</h3>
+                        <h3 className='text-white'>HTML</h3>
                     </div>
                 </motion.div>
             </div>
@@ -123,7 +123,7 @@ const Skills = () => {
                         <Image src={JavaScript} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>JAVASCRIPT</h3>
+                        <h3 className='text-white'>JAVASCRIPT</h3>
                     </div>
                 </motion.div>
             </div>
@@ -139,7 +139,7 @@ const Skills = () => {
                         <Image src={MongoDB} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>MongoDB</h3>
+                        <h3 className='text-white'>MongoDB</h3>
                     </div>
                 </motion.div>
             </div>
@@ -155,7 +155,7 @@ const Skills = () => {
                         <Image src={react} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>REACT</h3>
+                        <h3 className='text-white'>REACT</h3>
                     </div>
                 </motion.div>
             </div>
@@ -171,7 +171,7 @@ const Skills = () => {
                         <Image src={Typescript} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>TYPESCRIPT</h3>
+                        <h3 className='text-white'>TYPESCRIPT</h3>
                     </div>
                 </motion.div>
             </div>
@@ -187,7 +187,7 @@ const Skills = () => {
                         <Image src={Tailwind} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>TAILWIND</h3>
+                        <h3 className='text-white'>TAILWIND</h3>
                     </div>
                 </motion.div>
             </div>
@@ -204,7 +204,7 @@ const Skills = () => {
                         <Image src={php} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>PHP</h3>
+                        <h3 className='text-white'>PHP</h3>
                     </div>
                 </motion.div>
             </div>
@@ -221,7 +221,7 @@ const Skills = () => {
                         <Image src={python} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>PYTHON</h3>
+                        <h3 className='text-white'>PYTHON</h3>
                     </div>
                 </motion.div>
             </div>
@@ -238,7 +238,7 @@ const Skills = () => {
                         <Image src={sql} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>SQL</h3>
+                        <h3 className='text-white'>SQL</h3>
                     </div>
                 </motion.div>
             </div>
@@ -255,7 +255,7 @@ const Skills = () => {
                         <Image src={wordPress} alt='/' width={64} height={64} />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>WORDPRESS</h3>
+                        <h3 className='text-white'>WORDPRESS</h3>
                     </div>
                 </motion.div>
             </div>

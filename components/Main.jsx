@@ -15,14 +15,14 @@ const Main = () => {
           transition={{duration: 2}}
           variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
           >
-          <p className="uppercase bg-gray-600 text-sm tracking-widest">
+          <p className="uppercase bg-yellow-600 text-sm tracking-widest">
             LET'S BUILD SOMETHING GREAT TOGETHER
           </p>
-          <h1 className="py-4 text-gray-700">
-            Hi, I'm <span className="text-[#5651e5]">Emmanuel</span>
+          <h1 className="py-4 text-yellow-700">
+            Hi, I'm <span className="text-[#ffb300]">Emmanuel</span>
           </h1>
-          <h1 className="py-4 text-gray-700">A FULL-STACK WEB DEVELOPER</h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
+          <h1 className="py-4 text-white">A FULL-STACK WEB DEVELOPER</h1>
+          <p className="py-4 text-white max-w-[70%] m-auto">
             I'm a proficient full-stack developer providing high-impact web and mobile app solutions for diverse industry and
             organization. Skilled in developing and testing multiple web and mobile-based applications incorporating a range of
             technologies. Passionate about learning and development with desire to apply skills to a larger development, eager

@@ -11,8 +11,8 @@ const Navbar = () => {
 
 const [nav, setNav] = useState(false);
 const [shadow, setShadow] = useState(false);
-const [navBackground, setNavBackground] = useState('#f3e5f5');
-const [linkColor, setLinkColor] = useState('#1f2937');
+const [navBackground, setNavBackground] = useState('#3d0e36');
+const [linkColor, setLinkColor] = useState('#ffb300');
 const router = useRouter();
 
 {/*function that handles/toggle the menu using state*/}
@@ -39,10 +39,10 @@ useEffect(()=>{
     router.asPath === '/Dasboard' 
   ) {
     setNavBackground('transparent')
-    setLinkColor('#ecf0f3')
+    setLinkColor('#3d0e36')
   } else {
-    setNavBackground('#ecf0f3')
-    setLinkColor('#1f2937')
+    setNavBackground('#3d0e36')
+    setLinkColor('#ffb300')
   }
 }, [router])
 
@@ -85,7 +85,7 @@ useEffect(()=>{
       <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
         
         {/*Mobile menu*/}
-        <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500' 
+        <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#3d0e36] p-10 ease-in duration-500' 
            : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
           <div>
             <div className="flex w-full items-center justify-between">
@@ -98,7 +98,7 @@ useEffect(()=>{
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
+              <p className="w-[85%] md:w-[90%] py-4 text[#ffb300]">
                 Let's Collaborate and build something great..!
               </p>
             </div>

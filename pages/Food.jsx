@@ -21,9 +21,9 @@ const Food = () => {
       {/*container*/}
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
         <div className='col-span-4'>
-          <p className='tracking-widest uppercase text-[#5651e5] text-xl'>Project</p>
-          <h2>Overview</h2>
-          <p>This web app was built using React JS and hosted on Netlify. Users are able to select their favorite
+          <p className='tracking-widest uppercase text-[#ffb300] text-xl'>Project</p>
+          <h2 className='text-white'>Overview</h2>
+          <p className='text-white'>This web app was built using React JS and hosted on Netlify. Users are able to select their favorite
             food. Pulling all of data from data.js file to simulate an PI response without using axios to make the call,
             filtering through the data using JavaScript filter array method.
           </p>
@@ -36,11 +36,11 @@ const Food = () => {
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
-            <p className='text-center font-bold pb-2'>Technologies</p>
+            <p className='text-center font-bold pb-2 text-[#ffb300]'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> React</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> Tailwind</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> JavaScript</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> React</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> Tailwind</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> JavaScript</p>
             </div>
           </div>
         </div>

@@ -14,8 +14,8 @@ const Chat = () => {
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'></div>
         <Image className='absolute z-1' layout='fill' objectFit='cover' src={Pinge} alt='/' />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Chat App</h2>
-          <h3>React JS, Tailwind, Firebase</h3>
+          <h2 className='py-2 text-white'>Chat App</h2>
+          <h3 className='text-white'>React JS, Tailwind, Firebase</h3>
         </div>
       </div>
 
@@ -30,9 +30,9 @@ const Chat = () => {
         variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
         >
         
-          <p className='tracking-widest uppercase text-[#5651e5] text-xl'>Project</p>
-          <h2>Overview</h2>
-          <p>To-do App is a web application that employs the use of CRUD (create, read, update, delete) functionality for 
+          <p className='tracking-widest uppercase text-[#ffb300] text-xl'>Project</p>
+          <h2 className='text-white'>Overview</h2>
+          <p className='text-white'>To-do App is a web application that employs the use of CRUD (create, read, update, delete) functionality for 
             persistence data storage. The CRUD programming helps to facilitate viewing, searching, and changing information
             by managing data from the database (Google cloud-Firebase). It’s a responsive, scalable and user friendly App, 
             that allows users keep track of all their daily routine or activities and marking all completed task at the end
@@ -47,19 +47,19 @@ const Chat = () => {
         </motion.div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
-            <p className='text-center font-bold pb-2'>Technologies</p>
+            <p className='text-center font-bold pb-2 text-[#ffb300]'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> React</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> Tailwind</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> JavaScript</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> Firebase</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> CRUD functionality / programming</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1 mr-1' /> Firestore</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> React</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> Tailwind</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> JavaScript</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> Firebase</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1' /> CRUD functionality / programming</p>
+              <p className='text-white py-2 flex items-center'><RiRadioButtonFill className='pr-1 mr-1' /> Firestore</p>
             </div>
           </div>
         </div>
         <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
+          <p className='underline cursor-pointer text-[#ffb300]'>Back</p>
         </Link>
       </div>
     </div>
