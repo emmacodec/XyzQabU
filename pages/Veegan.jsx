@@ -14,7 +14,7 @@ const Veegan = () => {
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'></div>
         <Image className='absolute z-1' layout='fill' objectFit='cover' src={Bahamas} alt='/' />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2 text-white'>Quiz App</h2>
+          <h2 className='py-2 text-[#ffb300]'>Quiz App</h2>
           <h3 className='text-white'>Next JS, CSS, JavaScript</h3>
         </div>
       </div>

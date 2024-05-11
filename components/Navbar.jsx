@@ -98,7 +98,7 @@ useEffect(()=>{
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4 text[#ffb300]">
+              <p className="w-[85%] md:w-[90%] py-4 text-white">
                 Let's Collaborate and build something great..!
               </p>
             </div>

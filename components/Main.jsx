@@ -30,6 +30,10 @@ const Main = () => {
             for new challenges that allow me to continue growing professionally.
           </p>
 
+          <a href="https://drive.google.com/file/d/1uuAgCpFRAzLzoH04T4qzsVzGwWI2GIKU/view?usp=drivesdk">
+            <button className='px-8 py-2 mt-4 mr-8'>Resume</button>
+          </a>
+
          
 
           {/*container surrounding icons*/}
