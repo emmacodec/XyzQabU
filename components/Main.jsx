@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Main = () => {
   return (
     <div id="main" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center pt-20">
         <motion.div  
         initial="hidden" 
           whileInView='visible' 
@@ -15,7 +15,7 @@ const Main = () => {
           transition={{duration: 2}}
           variants={{hidden:{opacity: 0, x: -100}, visible:{opacity: 1, x: 0},}}
           >
-          <p className="uppercase bg-yellow-600 text-sm tracking-widest">
+          <p className="uppercase bg-purple-800 text-sm tracking-widest text-white">
             LET'S BUILD SOMETHING GREAT TOGETHER
           </p>
           <h1 className="py-4 text-yellow-700">

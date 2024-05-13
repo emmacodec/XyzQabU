@@ -122,7 +122,7 @@ useEffect(()=>{
               </Link>
             </ul>
             <div className="pt-39">
-              <p className="uppercase tracking-widest text-[#5615e5]">
+              <p className="uppercase tracking-widest text-white">
                 Let's Connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
